@@ -3,7 +3,7 @@
 <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-<link rel="stylesheet" href="/css/order.css">
+<link rel="stylesheet" href="/css/order.css?v=<?= time()?>">
 
 <div class="order_details">
     <div class="order_contanier">
@@ -54,6 +54,6 @@
 <script src="/js/libs/jquery-4.0.0.min.js"></script>
 <script src="/js/libs/swiper-bundle.min.js"></script>
 <script src="/js/libs/sweetalert2.js"></script>
-<script src="/js/config.js"></script>
-<script src="/js/script.js"></script>
+<script src="/js/config.js?v=<?= time()?>"></script>
+<script src="/js/script.js?v=<? time()?>"></script>
 <?php include_once('./footer.php') ?>

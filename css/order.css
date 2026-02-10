@@ -620,6 +620,9 @@ tr {
     display: flex;
     justify-content: space-between;
 }
+.order_confirm_pdf {
+    margin-top: 20px;
+}
 
 .cart_btns>* {
     display: inline-block;
