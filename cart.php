@@ -29,39 +29,39 @@
                     <div class="_col _col_2">
                         <div class="_form_group">
                             <label for="customer_name">Name </label>
-                            <input class="form_control" id="customer_name" name="customer_name" type="text" placeholder="Enter Your Name" />
+                            <input class="form_control validate_text" id="customer_name" name="customer_name" type="text" placeholder="Enter Your Name" />
                         </div>
                     </div>
                     <div class="_col _col_2">
                         <div class="_form_group">
                             <div class="_form_group">
                                 <label for="number">Number </label>
-                                <input class="form_control" id="number" name="number" type="number" placeholder="Enter Your Number..." />
+                                <input class="form_control validate_number" maxlength="10" id="number" name="number" type="number" placeholder="Enter Your Number..." />
                             </div>
                         </div>
                     </div>
                     <div class="_col _col_2">
                         <div class="_form_group">
                             <label for="Whatsapp ">Whatsapp</label>
-                            <input class="form_control" id="whatsapp " name="whatsapp" type="text" placeholder="Enter Your Whatapp..." />
+                            <input class="form_control" id="whatsapp" maxlength="10" name="whatsapp" type="text" placeholder="Enter Your Whatapp..." />
                         </div>
                     </div>
                     <div class="_col _col_2">
                         <div class="_form_group">
                             <label for="Whatsapp ">E-Mail</label>
-                            <input class="form_control" id="email " name="email" type="email" placeholder="Enter Your E-Mail..." />
+                            <input class="form_control validate_email" id="email" name="email" type="email" placeholder="Enter Your E-Mail..." />
                         </div>
                     </div>
                     <div class="_col _col_2">
                         <div class="_form_group">
                             <label for="address ">Address </label>
-                            <textarea class="form_control" id="address " name="address" placeholder="Enter Your Address..."></textarea>
+                            <textarea class="form_control validate_text" id="address " name="address" placeholder="Enter Your Address..."></textarea>
                         </div>
                     </div>
                     <div class="_col _col_2">
                         <div class="_form_group">
                             <label for="state ">Select State</label>
-                            <select id="email " class="form_control" name="state">
+                            <select id="state " class="form_control form_state_delivery validate_select" name="state">
                                 <option value="">Select State</option>
                             </select>
                         </div>
@@ -87,7 +87,7 @@
         </div>
         <div class="cart_btns">
             <a class="" href="/order.php">Continue Shopping</a>
-            <a class="confirm_order">Confirm Order</a>
+            <a class="confirm_order" href="#">Confirm Order</a>
         </div>
     </div>
 </div>

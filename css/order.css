@@ -593,6 +593,10 @@ tr {
     width: 100%
 }
 
+._form_group .form_control.error_input {
+    border: 1px solid #ff0000
+}
+
 .cart_summary {
     margin-top: 20px;
 }
@@ -697,6 +701,17 @@ tr {
     color: #dc3545;
     border: 1px solid #dc3545;
 }
+
 .coupon_code_form {
     display: none;
+}
+
+.error_text {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #ff0000;
+}
+.order_confirm_contanier {
+    max-width: 1024px;
+    margin: auto;
 }
