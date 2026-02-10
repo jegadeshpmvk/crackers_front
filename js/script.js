@@ -201,6 +201,13 @@ $(function () {
         var el = $(this);
         order.updateCart(el);
     });
+    
+//     $(document).on("click", ".confirm_order_download", function (e) {
+//  e.preventDefault();
+//     let href = $(this).attr("href");
+
+//         window.location.href = href;
+//     });
 
 
     order.setup(1);
@@ -606,7 +613,7 @@ var order = {
             }).then((res) => {
                 if (res.isConfirmed) {
                     localStorage.removeItem("cart");
-                    window.location.href = '/order-confirm?order_id=' + result.data.order_id;
+                    window.location.href = '/order-confirm.php?order_id=' + result.data.order_id;
                 }
             })
             el.removeClass('loading');
@@ -627,7 +634,9 @@ var order = {
             });
 
             const result = await response.json();
-            $('.order_confirm_contanier').html(result.data.content);
+            $('.order_confirm_pdf').html(result.data.content);
+            console.log(result.data.file);
+            $('.confirm_order_download').attr('href', result.data.file);
 
         }
     }
