@@ -1,5 +1,5 @@
 const ENV = {
-    API_URL: "https://backend.srilaxmiscrackers.com/v1",
+    API_URL: "http://local.crackers.com/v1",
     SITE_NAME: "Crackers",
     MIN_ORDER: 3000
 };

@@ -329,10 +329,8 @@ var order = {
                         html += `<div class="_col _col_4">
                     <div class="product_con">
                         <div class="product_image">
-                            <div class="probgCon">
-                            ${product.images && product.images.length > 0 ? `<div class="probgimage" style="background-image: url('${product.images[0].url.file}')"></div>` : `<div class="probgimage" style="background-image: url('')"></div>`}
+                            ${product.images && product.images.length > 0 ? `<img class="probgimage" src="${product.images[0].url.file}" />` : `<img class="probgimage" src=""/>`}
                                 
-                            </div>
                         </div>
                         <div class="product_content" data-id="${product.id}" 
                             data-price="${product.price}"
@@ -345,7 +343,7 @@ var order = {
                             <div class="product_price_group">
                                 <div class="product_price">
                                     <span class="old_price">${order.formatINR(product.mrp)}</span>
-                                    <span class="new_price" data-price="${product.price}">${order.formatINR(product.price)}</span>
+                                    <span class="new_price" data-price="${product.selling_price}">${order.formatINR(product.selling_price)}</span>
                                 </div>
                                 <div class="product_total_price hide">${order.formatINR(total)}</div>
                             </div>
